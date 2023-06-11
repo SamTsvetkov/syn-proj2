@@ -17,42 +17,13 @@ body {
     width: 100%;
     padding: 0 100px 0 140px;
 }
-nav {
-    position: sticky;
-    top: 0;
-    left: 0;
-    background: #E5E5E5;
-}
 
-.navbar {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.navbar li {
-    list-style: none;
-    margin: 0 44px 0 0;
-
-}
-
-
-nav>div {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+header {
+    margin-top: 30px;
 }
 
 .header-text {
     margin: 48px 0 40px;
-}
-
-.triggers {
-    margin-top: 115px;
-}
-
-.triggers > div {
-    max-width: 180px;
 }
 
 header .container > div {
@@ -61,11 +32,13 @@ header .container > div {
 }
 
 .header-left {
-    width: 50%;
+    flex: 3;
+    padding-top: 65px;
+    background: url(/img/shado.png) transparent no-repeat center;
+    background-size: contain;
 }
 .header-right {
-    width: 50%;
-
+    flex: 4;
     background: url(/img/header\ card.png) transparent no-repeat center;
     background-size: contain;
 }
@@ -76,21 +49,46 @@ header .container > div {
     align-items: center;
     height: 50px;
     padding-left: 60px;
+    cursor: pointer;
 }
 
 .top-button::before {
     position: absolute;
     left: 0;
     top: 0;
-    display: block;
-    content: '→';
-    background: black;
+    
+    background: url(/img/arrow.png) transparent no-repeat center;
+    content: '';
     width: 50px;
     height: 100%;
     color: #F3FAFE;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    
+    display: block;
+}
+
+.trigger-fire {
+    background: url(/img/fire.svg) transparent no-repeat center;
+    background-size: contain;
+    width: 35px;
+    height: 35px;
+    display: inline-block;
+}
+
+.trigger-fire-bold {
     font-size: 30px;
 }
 
+.trigger-icon {
+    background: url(/img/coin.svg) transparent no-repeat center;
+    background-size: contain;
+    width: 35px;
+    height: 35px;
+    display: inline-block;
+    margin-bottom: 15px;
+}
+
+.triggers .bold,
+.triggers .medium {
+    display: inline-block;
+    margin-bottom: 30px;
+}
