@@ -92,3 +92,32 @@ header .container > div {
     display: inline-block;
     margin-bottom: 30px;
 }
+
+.modal-container {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    left: 0;
+}
+
+.modal-container.active {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #ffffff73;
+  }
+
+.modal {
+    border-radius: 20px;
+    padding: 20px;
+    min-width: 500px;
+    min-height: 400px;
+    max-width: 500px;
+    max-height: 400px;
+    width: 100%;
+    height: 100%;
+    background: white;
+    box-shadow: 0 0 50px -10px black;
+}
