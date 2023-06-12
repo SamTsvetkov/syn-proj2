@@ -10,10 +10,9 @@ function openModal() {
 }
 
 function closeModal(event) {
-    if (event.target.id = 'modal-container') {
+    if (event.target.id == 'modal-container') {
         if (!modalContainer.classList.contains('active')) return;
         modalContainer.classList.remove('active');
-        return;
     }
     
 }
